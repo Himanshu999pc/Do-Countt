@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meesho Reselling Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1 class="fade-in">Do-Count</h1>
+  </header>
+
+  <main>
+    <section class="product fade-in-up">
+      <img src="WhatsApp Image 2025-07-20 at 1.08.21 PM (1).jpeg" alt="" />
+      <!-- <img src="WhatsApp Image 2025-07-20 at 1.08.21 PM.jpeg" alt=""> -->
+      <h2>Zoro's Katana</h2>
+      <p>Price: ₹250</p>
+      <button onclick="fillProduct('Zoro Katana')">Order Now</button>
+    </section>
+
+    <!-- <section class="product fade-in-up">
+      <img src="https://via.placeholder.com/300x200" alt="Bag" />
+      <h2>Trendy Bag</h2>
+      <p>Price: ₹699</p>
+      <button onclick="fillProduct('Trendy Bag - ₹699')">Order Now</button>
+    </section> -->
+
+    <section class="order-form slide-in">
+      <h2>Enter Delivery Details (COD Only)</h2>
+      <form action="https://formsubmit.co/businesspc9991@gmail.com" method="POST">
+        <input style="font-size: 1.3rem;" type="text" id="product" name="product" placeholder="Selected Product" required readonly />
+        <input style="font-size: 1.3rem;" type="text" name="name" placeholder="Your Name" required />
+        <textarea style="font-size: 1.3rem;" name="address" placeholder="Full Delivery Address" required></textarea>
+        <input style="font-size: 1.3rem;" type="tel" name="phone" placeholder="Phone Number" required />
+        <input type="hidden" name="_subject" value="New Reselling Order from Website" />
+        <input type="hidden" name="_captcha" value="false" />
+        <button style="font-size: 1.3rem;" type="submit">Place COD Order</button>
+      </form>
+    </section>
+  </main>
+
+  
+  <footer>
+    <p>© 2025 Prince’s Reseller Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

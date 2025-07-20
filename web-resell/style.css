@@ -1,0 +1,198 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff0f5;
+  color: #333;
+}
+
+
+/* Header */
+header {
+  background: #292025;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Products */
+.product {
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgb(80, 79, 79);
+  text-align: center;
+}
+
+.order-form {
+  padding: 40px;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  font-size: 1.9rem;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 1.6rem;
+  color: #444;
+}
+
+.product button {
+  margin-top: 12px;
+  padding: 16px 23px;
+  background-color: #066d2d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.product button:hover {
+  background-color: #155a12;
+}
+
+/* Order Form */
+.order-form {
+  font-size: 1rem;
+  background: white;
+  margin: 30px auto;
+  padding: 87px;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-form h2 {
+  margin-bottom: 10px;
+}
+
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.order-form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.order-form button:hover {
+  background-color: #006400;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+
+  .product,
+  .order-form {
+    margin: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .product,
+  .order-form {
+    flex: 1;
+    max-width: 400px;
+    margin: 10px;
+  }
+
+  .product {
+    height: 367px;
+    padding: 73px;
+  }
+
+  .order-form {
+    align-self: stretch;
+    font-size: 26px;
+  }
+
+  .product img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
